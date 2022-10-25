@@ -9,6 +9,7 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --footer-background-color: #2f303f;
+  --svg-background-color: #f5f4fa;
   --footer-mail-phone-color: rgba(255, 255, 255, 0.6);
   --border-color-portfolio: #eeeeee;
   --border-color-header: #ececec;
@@ -199,6 +200,20 @@ img {
   background-color: var(--hero-background-color);
 }
 
+/* Overlay */
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-image-hero.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .hero-title {
   margin: 0 auto 30px;
   max-width: 696px;
@@ -285,6 +300,36 @@ img {
   margin-left: var(--card-portfolio-gap);
   flex-basis: calc(100% / 4 - var(--card-portfolio-gap));
 }
+.flex-description::before {
+  display: block;
+  content: '';
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--svg-background-color);
+  border-radius: 4px;
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-clock::before {
+  background-image: url(../images/clock\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.
 /* Секція : "Наші переваги" */
 
 .title-description {
