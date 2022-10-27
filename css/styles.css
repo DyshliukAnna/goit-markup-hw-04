@@ -161,25 +161,33 @@ img {
   text-decoration: none;
 }
 
-/* .mail-link:hover {
+.mail-link:hover {
   color: var(--accent-color);
-} */
+}
 .mail-link:focus {
   color: var(--accent-color);
 }
-.icon-mail{
-  fill: #757575;
-}
+
 .flex-mail{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.mail-hover:hover{
-   color: var(--accent-color);
+/* Іконки в Футері */
+
+.icon-logo-header{
+  margin-right: 10px;
+  fill: #757575;
 }
 
+.icon-logo-header:hover{
+  fill: var(--accent-color);
+}
+.icon-logo-header:focus{
+  fill: var(--accent-color);
+
+}
 /* Телефон в header */
 
 .header-phone {
@@ -272,8 +280,10 @@ img {
   outline: none;
 }
 
-/*
-Приховує текст заголовку */
+/* Секція:"Наші переваги"  */
+
+/*Приховує текст заголовку */
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -287,7 +297,7 @@ img {
   margin: -1px;
 }
 
-/* Дві головні секціі для оформлення бекграунду*/
+/* Оформлення бекграунду*/
 
 .primary-section {
   background-color: var(--hero-color);
@@ -317,15 +327,7 @@ img {
   margin-left: var(--card-portfolio-gap);
   flex-basis: calc(100% / 4 - var(--card-portfolio-gap));
 }
-/* .flex-description::before {
-  display: block;
-  content: '';
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: var(--svg-background-color);
-  border-radius: 4px;
-} */
+
 .icon-description-background {
   height: 120px;
   max-width: 100%;
@@ -335,22 +337,19 @@ img {
   border-radius: 4px;
 }
 
-.flex-benefits{
-  display: flex;
-  flex-direction: column;
-}
-
 .title-description {
   margin-bottom: 10px;
 
   text-transform: uppercase;
   font-size: 14px;
 }
+
 .description-benefits {
   color: var(--secondary-color);
 
   line-height: calc(24 / 14);
 }
+
 /* Флекси + серія фотографій з секції: "Чим ми займаємось" на головній сторінці*/
 
 .main-section {
@@ -412,6 +411,7 @@ img {
 
   margin-top: calc(-1 * var(--card-portfolio-gap));
   margin-left: calc(-1 * var(--card-portfolio-gap));
+  
 }
 
 .item-secondary-flex {
@@ -423,6 +423,8 @@ img {
   margin-top: var(--card-portfolio-gap);
   margin-left: var(--card-portfolio-gap);
   flex-basis: calc(100% / 4 - var(--card-portfolio-gap));
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .team-box {
@@ -478,6 +480,7 @@ img {
 .item-secondary-button:not(:last-child) {
   margin-right: 8px;
 }
+
 .secondary-button {
   text-align: center;
   padding: 6px 22px;
@@ -497,6 +500,7 @@ img {
 .secondary-button:hover {
   color: var(--hero-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .secondary-button:focus {
   color: var(--hero-color);
@@ -521,6 +525,10 @@ img {
   margin-top: var(--card-portfolio-gap);
   margin-left: var(--card-portfolio-gap);
   flex-basis: calc(100% / 3 - var(--card-portfolio-gap));
+}
+
+.item-prtfolio-flex:hover{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .title-item-card {
@@ -595,9 +603,6 @@ border-color: var(--accent-color);
 
 }
 
-.icon-logo-clients{
-margin-right: 10px;
-}
 /* Footer */
 
 .footer {
