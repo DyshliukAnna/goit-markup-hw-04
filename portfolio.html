@@ -24,10 +24,10 @@
           <a href="./index.html" class="logo-header">Web<span class="logo-dark">Studio</span></a>
           <ul class="list list-header">
             <li>
-              <a href="./index.html" class="nav-link">Студія</a>
+              <a href="./index.html" class="nav-link current">Студія</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="nav-link current">Портфоліо</a>
+              <a href="./portfolio.html" class="nav-link">Портфоліо</a>
             </li>
             <li>
               <a href="#" class="nav-link">Контакти</a>
@@ -35,10 +35,16 @@
           </ul>
         </nav>
         <ul class="list list-header list-header-marginauto">
-          <li>
+          <li class="flex-mail">
+            <svg class="icon-logo-header" width="16px" height="12px">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg>
             <a href="mailto:info@devstudio.com" class="mail-link">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="flex-mail">
+            <svg class="icon-logo-header" width="10px" height="16px">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
             <a href="tel:+380961111111" class="header-phone">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -227,39 +233,66 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container container-footer-nav">
-        <a href="./index.html" class="logo-footer">Web<span class="logo-light">Studio</span></a>
-        <address class="flex-footer-adress">
-          <ul class="list">
-            <li class="footer-adress">
-              <a
-                href="https://goo.gl/maps/sygjHCtaj6LVPZhWA"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="footer-adress-link"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="footer-contacts">
-              <a
-                href="mailto:info@devstudio.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="footer-link"
-                >info@devstudio.com
-              </a>
-            </li>
-            <li class="footer-contacts footer-contacts-nomargin">
-              <a
-                href="tel:+380961111111"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="footer-link"
-                >+38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
+      <div class="container main-flex-footer">
+        <div class="flex-footer-nav">
+          <a href="./index.html" class="logo-footer">Web<span class="logo-light">Studio</span></a>
+          <address class="flex-footer-adress">
+            <ul class="list">
+              <li class="footer-adress">
+                <a
+                  href="https://goo.gl/maps/sygjHCtaj6LVPZhWA"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="footer-adress-link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="footer-contacts">
+                <a
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="footer-link"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="footer-contacts footer-contacts-nomargin">
+                <a
+                  href="tel:+380961111111"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="footer-link"
+                  >+38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="net-flex net-flex-footer">
+          <h2 class="net-text">Приєднуйтесь</h2>
+          <div class="net-flex">
+            <a href="#" class="link-net link-net-footer">
+              <svg class="icon icon-footer icon-instagram" width="20px" hight="20px">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="link-net link-net-footer">
+              <svg class="icon icon-footer icon-twitter" width="20px" hight="20px">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="link-net link-net-footer">
+              <svg class="icon icon-footer icon-twitter" width="20px" hight="20px">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="link-net link-net link-net-footer">
+              <svg class="icon icon-footer icon-twitter" width="20px" hight="20px">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
