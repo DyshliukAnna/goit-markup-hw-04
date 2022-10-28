@@ -10,7 +10,7 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --footer-background-color: #2f303f;
-  --svg-background-color: #f5f4fa; 
+  --svg-background-color: #f5f4fa;
   --footer-mail-phone-color: rgba(255, 255, 255, 0.6);
   --border-color-portfolio: #eeeeee;
   --border-color-header: #ececec;
@@ -97,6 +97,9 @@ img {
 .logo-header:hover .logo-dark {
   color: var(--accent-color);
 }
+.logo-header:focus .logo-dark {
+  color: var(--accent-color);
+}
 /* Навігація в Хедері */
 
 .container-header-nav {
@@ -172,7 +175,7 @@ img {
   fill: var(--accent-color);
 }
 
-.flex-mail{
+.flex-mail {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,19 +183,19 @@ img {
 
 /* Іконки в Футері */
 
-.icon-logo-header{
+.icon-logo-header {
   margin-right: 10px;
 }
 
 /* Телефон в header */
 
 .header-phone {
-  display:flex;
+  display: flex;
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
   fill: var(--secondary-color);
-gap: 10px;
+  gap: 10px;
 
   color: var(--secondary-color);
 
@@ -204,7 +207,7 @@ gap: 10px;
 
 .header-phone:hover {
   color: var(--accent-color);
-    fill: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .header-phone:focus {
@@ -323,7 +326,7 @@ gap: 10px;
   display: flex;
   flex-direction: column;
   width: 270px;
-  f
+
   margin-top: var(--card-portfolio-gap);
   margin-left: var(--card-portfolio-gap);
   flex-basis: calc(100% / 4 - var(--card-portfolio-gap));
@@ -412,7 +415,6 @@ gap: 10px;
 
   margin-top: calc(-1 * var(--card-portfolio-gap));
   margin-left: calc(-1 * var(--card-portfolio-gap));
-  
 }
 
 .item-secondary-flex {
@@ -424,7 +426,8 @@ gap: 10px;
   margin-top: var(--card-portfolio-gap);
   margin-left: var(--card-portfolio-gap);
   flex-basis: calc(100% / 4 - var(--card-portfolio-gap));
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -501,7 +504,8 @@ gap: 10px;
 .secondary-button:hover {
   color: var(--hero-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .secondary-button:focus {
   color: var(--hero-color);
@@ -528,8 +532,9 @@ gap: 10px;
   flex-basis: calc(100% / 3 - var(--card-portfolio-gap));
 }
 
-.item-prtfolio-flex:hover{
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.item-prtfolio-flex:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .title-item-card {
@@ -573,35 +578,28 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 }
 /* Секція Постійні клієнти */
 
-.icon-clients-border {
-
-}
 .text-clients {
   font-size: 36px;
-line-height: calc(42/36);
-text-align: center;
-color: var(--primary-color);
-margin-bottom: 50px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 50px;
 }
 
-.link-logo-clients{
+.link-logo-clients {
   display: block;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   height: 92px;
   width: 170px;
   padding: 16px 32px;
-  /* margin-bottom: 30px; */
+
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
 }
 
 .link-logo-clients:hover {
-fill: var(--icons-hover-color);
-border-color: var(--accent-color);
-}
-
-.link-logo-clients:focus{
-
+  fill: var(--icons-hover-color);
+  border-color: var(--accent-color);
 }
 
 /* Footer */
@@ -701,12 +699,10 @@ border-color: var(--accent-color);
 
   justify-content: space-between;
   text-transform: uppercase;
-  
 }
-.clients-flex{
-   display: flex;
-   justify-content: space-between;
-  
+.clients-flex {
+  display: flex;
+  justify-content: space-between;
 }
 .link-net {
   display: flex;
@@ -721,6 +717,9 @@ border-color: var(--accent-color);
 .link-net:hover {
   background-color: var(--accent-color);
 }
+.link-net:focus {
+  background-color: var(--accent-color);
+}
 
 .icon {
   fill: #afb1b8;
@@ -728,7 +727,9 @@ border-color: var(--accent-color);
 .icon:hover {
   fill: #ffffff;
 }
-
+.icon:focus {
+  fill: #ffffff;
+}
 .link-net-footer {
   display: flex;
   width: 44px;
