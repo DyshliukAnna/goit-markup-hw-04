@@ -149,10 +149,12 @@ img {
   margin-left: auto;
 }
 .mail-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-bottom: 32px;
   padding-top: 32px;
-
+  fill: var(--secondary-color);
+  gap: 10px;
   color: var(--secondary-color);
 
   font-weight: 500;
@@ -163,9 +165,11 @@ img {
 
 .mail-link:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .mail-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .flex-mail{
@@ -178,22 +182,17 @@ img {
 
 .icon-logo-header{
   margin-right: 10px;
-  fill: #757575;
 }
 
-.icon-logo-header:hover{
-  fill: var(--accent-color);
-}
-.icon-logo-header:focus{
-  fill: var(--accent-color);
-
-}
 /* Телефон в header */
 
 .header-phone {
-  display: block;
+  display:flex;
+  text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  fill: var(--secondary-color);
+gap: 10px;
 
   color: var(--secondary-color);
 
@@ -205,10 +204,12 @@ img {
 
 .header-phone:hover {
   color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .header-phone:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* Cекція hero */
@@ -692,31 +693,12 @@ border-color: var(--accent-color);
   color: var(--accent-color);
 }
 
-/* .icon-instagram {
-  width: 20px;
-  height: 20px;
-}
-
-.icon-twitter {
-  width: 20px;
-  height: 20px;
-}
-
-.icon-facebook {
-  width: 20px;
-  height: 20px;
-}
-.icon-linkedin {
-  width: 20px;
-  height: 20px;
-} */
-
 .net-flex {
   display: flex;
   width: 206px;
   height: 44px;
   align-items: center;
-  /* justify-content: center; */
+
   justify-content: space-between;
   text-transform: uppercase;
   
@@ -747,12 +729,6 @@ border-color: var(--accent-color);
   fill: #ffffff;
 }
 
-/* .circle {
-  background-color: #188ce8;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-} */
 .link-net-footer {
   display: flex;
   width: 44px;
